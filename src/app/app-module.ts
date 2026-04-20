@@ -2,17 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing-module';
-import { AppComponent } from './app.component';
+import { App } from './app';
 import { SeriesModule } from './series/series-module';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [App],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     SeriesModule
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [App]
 })
 export class AppModule {}
